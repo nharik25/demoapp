@@ -1,2 +1,2 @@
-# devops-jenkins-kubernetes
+# demoapp
 #Update with steps to use this demo
