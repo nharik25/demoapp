@@ -13,20 +13,20 @@
 kind: ReplicationController
 apiVersion: v1
 metadata:
-  name: pf9-demo
+  name: demoapp
 spec:
   replicas: 6
   selector:
-    name: pf9
+    name: harikni
     version: demo
   template:
     metadata:
       labels:
-        name: pf9
+        name: harikni
         version: demo
     spec:
       containers:
-      - image: pf9dockerhub/pf9-demo
+      - image: harikni/demoapp
         imagePullPolicy: Always
         name: demo
         ports:
